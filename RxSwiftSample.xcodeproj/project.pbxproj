@@ -12,7 +12,26 @@
 		5B9735BF1E8BFDA000CAF39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9735BD1E8BFDA000CAF39A /* Main.storyboard */; };
 		5B9735C11E8BFDA000CAF39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9735C01E8BFDA000CAF39A /* Assets.xcassets */; };
 		5B9735C41E8BFDA000CAF39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9735C21E8BFDA000CAF39A /* LaunchScreen.storyboard */; };
+		5B9735CC1E8C060200CAF39A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9735CB1E8C060200CAF39A /* RxSwift.framework */; };
+		5B9735CD1E8C060200CAF39A /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9735CB1E8C060200CAF39A /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B9735D01E8C060900CAF39A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9735CF1E8C060900CAF39A /* RxCocoa.framework */; };
+		5B9735D11E8C060900CAF39A /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9735CF1E8C060900CAF39A /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B9735CE1E8C060200CAF39A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B9735D11E8C060900CAF39A /* RxCocoa.framework in Embed Frameworks */,
+				5B9735CD1E8C060200CAF39A /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5B9735B61E8BFDA000CAF39A /* RxSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +41,8 @@
 		5B9735C01E8BFDA000CAF39A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B9735C31E8BFDA000CAF39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B9735C51E8BFDA000CAF39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B9735CB1E8C060200CAF39A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		5B9735CF1E8C060900CAF39A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9735D01E8C060900CAF39A /* RxCocoa.framework in Frameworks */,
+				5B9735CC1E8C060200CAF39A /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +63,8 @@
 			children = (
 				5B9735B81E8BFDA000CAF39A /* RxSwiftSample */,
 				5B9735B71E8BFDA000CAF39A /* Products */,
+				5B9735CF1E8C060900CAF39A /* RxCocoa.framework */,
+				5B9735CB1E8C060200CAF39A /* RxSwift.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 				5B9735B21E8BFDA000CAF39A /* Sources */,
 				5B9735B31E8BFDA000CAF39A /* Frameworks */,
 				5B9735B41E8BFDA000CAF39A /* Resources */,
+				5B9735CE1E8C060200CAF39A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +288,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P98QWW6UXS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taketomato.RxSwiftSample;
@@ -275,6 +305,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P98QWW6UXS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taketomato.RxSwiftSample;
