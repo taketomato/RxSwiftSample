@@ -38,18 +38,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgs-hG-vVL">
+                                <rect key="frame" x="164" y="441" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Wgs-hG-vVL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="6fi-W8-6cW"/>
+                            <constraint firstItem="Wgs-hG-vVL" firstAttribute="top" secondItem="m73-pF-wbG" secondAttribute="bottom" constant="48" id="7bB-hG-0lQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wgs-hG-vVL" secondAttribute="bottom" constant="196" id="9ri-b0-vYP"/>
                             <constraint firstItem="m73-pF-wbG" firstAttribute="top" secondItem="IgO-ir-5i2" secondAttribute="bottom" constant="24" id="Dhm-0J-nvQ"/>
                             <constraint firstItem="IgO-ir-5i2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="H5U-vt-1Ra"/>
                             <constraint firstItem="IgO-ir-5i2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qcp-3P-kli"/>
                             <constraint firstItem="IgO-ir-5i2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U0j-xS-RGc"/>
                             <constraint firstItem="m73-pF-wbG" firstAttribute="centerX" secondItem="IgO-ir-5i2" secondAttribute="centerX" id="YBg-1i-dMs"/>
                             <constraint firstItem="IgO-ir-5i2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oYl-6r-H1B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wgs-hG-vVL" secondAttribute="trailing" constant="149" id="uqN-yQ-UeC"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button" destination="Wgs-hG-vVL" id="c3t-h4-KWX"/>
                         <outlet property="label" destination="m73-pF-wbG" id="hva-2V-2Nr"/>
                         <outlet property="textField" destination="IgO-ir-5i2" id="12c-ai-G1G"/>
                     </connections>

@@ -1,0 +1,22 @@
+{
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "commitish" : "3.3.1",
+  "iOS" : [
+    {
+      "hash" : "c396ba1e2a95f6ab67cd587d40a2dabbfabe2769abc852e6a3b167e4deddc2c3",
+      "name" : "RxBlocking"
+    },
+    {
+      "hash" : "2e23be0c43649f9f882b93b1aba1b3bdbbf85061e4f95c50f92221db45d0e593",
+      "name" : "RxTest"
+    },
+    {
+      "hash" : "67bdf934f718b46c8c8bda07e061eafcbd4380c7ffd2b4f96b399614afa57f8d",
+      "name" : "RxCocoa"
+    },
+    {
+      "hash" : "7be480a02fb1b1315f47c84a6697283e9af152ea405001e564d3f5fa062081c7",
+      "name" : "RxSwift"
+    }
+  ]
+}
