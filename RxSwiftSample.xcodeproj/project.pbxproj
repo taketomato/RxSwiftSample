@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420B09021E9DA24B00D7EA09 /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B09011E9DA24B00D7EA09 /* RxTableViewController.swift */; };
 		5B9735BA1E8BFDA000CAF39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9735B91E8BFDA000CAF39A /* AppDelegate.swift */; };
 		5B9735BC1E8BFDA000CAF39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9735BB1E8BFDA000CAF39A /* ViewController.swift */; };
 		5B9735BF1E8BFDA000CAF39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9735BD1E8BFDA000CAF39A /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		420B09011E9DA24B00D7EA09 /* RxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
 		5B9735B61E8BFDA000CAF39A /* RxSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9735B91E8BFDA000CAF39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9735BB1E8BFDA000CAF39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				5B9735B91E8BFDA000CAF39A /* AppDelegate.swift */,
 				5B9735BB1E8BFDA000CAF39A /* ViewController.swift */,
+				420B09011E9DA24B00D7EA09 /* RxTableViewController.swift */,
 				5B9735BD1E8BFDA000CAF39A /* Main.storyboard */,
 				5B9735C01E8BFDA000CAF39A /* Assets.xcassets */,
 				5B9735C21E8BFDA000CAF39A /* LaunchScreen.storyboard */,
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420B09021E9DA24B00D7EA09 /* RxTableViewController.swift in Sources */,
 				5B9735BC1E8BFDA000CAF39A /* ViewController.swift in Sources */,
 				5B9735BA1E8BFDA000CAF39A /* AppDelegate.swift in Sources */,
 			);
@@ -293,6 +297,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RxSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taketomato.RxSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +315,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RxSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taketomato.RxSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +342,7 @@
 				5B9735CA1E8BFDA000CAF39A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

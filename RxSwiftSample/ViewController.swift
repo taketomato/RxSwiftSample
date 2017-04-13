@@ -21,21 +21,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
         textField.rx.text.orEmpty
-            .subscribe(onNext: { [weak self] text in
+            .subscribe(onNext: {[weak self] text in
                 guard let weakSelf = self else { return }
-                weakSelf.label.text = text
+                self?.label.text = text
             })
             .disposed(by: disposeBag)
         
         button.rx.tap
-            .subscribe(onNext: { [weak self] x in
-            print("button Tapped!")
-        })
-            .disposed(by: disposeBag)        
+            .subscribe(onNext: { [weak self] button in
+                self?.label.text = "button tapped!"
+            })
+            .disposed(by: disposeBag)
+        
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
